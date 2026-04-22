@@ -20,6 +20,7 @@ Empresas industriais que realizam o controle de qualidade manualmente enfrentam:
 
 Foi desenvolvido um sistema completo em Python com interface web utilizando Flask.
 Fluxo: Cadastro → Validação → Armazenamento em Caixas → Relatório → Download PDF
+
 O sistema:
 
 - Cadastra peças com peso, cor e comprimento
