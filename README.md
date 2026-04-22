@@ -105,6 +105,10 @@ Acesse em: http://127.0.0.1:5000
 
 🔗 Link do vídeo — em breve
 
+## 📄 Documentação Teórica
+A análise e discussão teórica do projeto está disponível no arquivo abaixo:
+🔗 [Parte Teórica — Análise e Discussão](https://github.com/guipardindev/sistema-pecas-qualidade/blob/84967405ecd36e90d3c600c15595132eaf98dc6b/docs/Algoritmos_Analise_Discussao_Guilherme.pdf)
+
 ## ⚠ Considerações
 
 - Os dados são armazenados em memória — reiniciar o servidor limpa os dados
