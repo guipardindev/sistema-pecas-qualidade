@@ -85,14 +85,19 @@ sistema-pecas-qualidade/
 
 Acesse diretamente pelo navegador:
 🔗 https://sistema-pecas-qualidade.onrender.com
+
 ⚠ O serviço gratuito do Render pode demorar até 50 segundos para iniciar após inatividade.
 
 ### Local
 
 git clone https://github.com/guipardindev/sistema-pecas-qualidade.git
+
 cd sistema-pecas-qualidade
+
 pip3 install -r requirements.txt
+
 python3 app.py
+
 Acesse em: http://127.0.0.1:5000
 
 ## 🎬 Vídeo Pitch
