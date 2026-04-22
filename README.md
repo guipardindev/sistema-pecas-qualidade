@@ -1,4 +1,4 @@
-# 🏭 SiCPQ — Sistema de Controle de Produção e Qualidade Industrial
+# SiCPQ — Sistema de Controle de Produção e Qualidade Industrial
 
 ## 📌 Descrição do Projeto
 Este projeto foi desenvolvido para a disciplina Algoritmos e Lógica de Programação — UNIFECAF.
