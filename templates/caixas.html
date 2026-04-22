@@ -1,0 +1,66 @@
+{% extends "base.html" %} {% block conteudo %}
+
+<section class="caixas-fechadas">
+	<h2>Caixas Fechadas ({{ lista_caixas | length }})</h2>
+
+	{% if lista_caixas %} {% for cx in lista_caixas %}
+	<div class="card">
+		<h3>Caixa #{{ cx.numero }} — {{ cx.total_pecas }} peças</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Peso (g)</th>
+					<th>Cor</th>
+					<th>Comprimento (cm)</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for p in cx.pecas %}
+				<tr>
+					<td>{{ p.id }}</td>
+					<td>{{ p.peso }}</td>
+					<td>{{ p.cor }}</td>
+					<td>{{ p.comprimento }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	{% endfor %} {% else %}
+	<p class="text-muted">Nenhuma caixa fechada.</p>
+	{% endif %}
+</section>
+
+<section class="caixa-atual">
+	<h2>
+		Caixa Atual — #{{ caixa_atual.numero }} ({{ caixa_atual.total_pecas }}/10)
+	</h2>
+
+	{% if caixa_atual.pecas %}
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Peso (g)</th>
+				<th>Cor</th>
+				<th>Comprimento (cm)</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for p in caixa_atual.pecas %}
+			<tr>
+				<td>{{ p.id }}</td>
+				<td>{{ p.peso }}</td>
+				<td>{{ p.cor }}</td>
+				<td>{{ p.comprimento }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	{% else %}
+	<p class="text-muted">(vazia)</p>
+	{% endif %}
+</section>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block conteudo %}
+
+<section class="relatorio">
+	<h2>Relatório Final</h2>
+
+	<div class="cards">
+		<div class="card">
+			<p>Total Cadastradas</p>
+			<span class="card-numero card-azul">{{ total }}</span>
+		</div>
+		<div class="card">
+			<p>Aprovadas</p>
+			<span class="card-numero card-verde">{{ total_ap }} ({{ taxa_ap }}%)</span>
+		</div>
+		<div class="card">
+			<p>Reprovadas</p>
+			<span class="card-numero card-vermelho"
+				>{{ total_rep }} ({{ taxa_rep }}%)</span
+			>
+		</div>
+		<div class="card">
+			<p>Caixas Fechadas</p>
+			<span class="card-numero card-azul">{{ total_caixas }}</span>
+		</div>
+		<div class="card">
+			<p>Caixa Atual</p>
+			<span class="card-numero card-azul">#{{ caixa_atual.numero }}</span>
+		</div>
+	</div>
+
+	<h2>Motivos de Reprovação</h2>
+
+	<div class="cards">
+		<div class="card">
+			<p>Peso fora do padrão</p>
+			<span class="card-numero card-vermelho">{{ cont_peso }}</span>
+		</div>
+		<div class="card">
+			<p>Cor inválida</p>
+			<span class="card-numero card-vermelho">{{ cont_cor }}</span>
+		</div>
+		<div class="card">
+			<p>Comprimento fora do padrão</p>
+			<span class="card-numero card-vermelho">{{ cont_comp }}</span>
+		</div>
+	</div>
+
+	<a href="/relatorio/download" class="btn-download">Baixar Relatório em PDF</a>
+</section>
+
+{% endblock %}

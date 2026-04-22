@@ -1,0 +1,63 @@
+{% extends "base.html" %} {% block conteudo %}
+
+<section class="aprovadas">
+	<h2>Aprovadas ({{ aprovadas | length }})</h2>
+
+	{% if aprovadas %}
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Peso (g)</th>
+				<th>Cor</th>
+				<th>Comprimento (cm)</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for p in aprovadas %}
+			<tr>
+				<td>{{ p.id }}</td>
+				<td>{{ p.peso }}</td>
+				<td>{{ p.cor }}</td>
+				<td>{{ p.comprimento }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	{% else %}
+	<p class="text-muted">Nenhuma peça aprovada.</p>
+	{% endif %}
+</section>
+
+<section class="reprovadas">
+	<h2>Reprovadas ({{ reprovadas | length }})</h2>
+
+	{% if reprovadas %}
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Peso (g)</th>
+				<th>Cor</th>
+				<th>Comprimento (cm)</th>
+				<th>Motivos</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for p in reprovadas %}
+			<tr>
+				<td>{{ p.id }}</td>
+				<td>{{ p.peso }}</td>
+				<td>{{ p.cor }}</td>
+				<td>{{ p.comprimento }}</td>
+				<td>{{ p.motivos | join(" / ") }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	{% else %}
+	<p class="text-muted">Nenhuma peça reprovada.</p>
+	{% endif %}
+</section>
+
+{% endblock %}

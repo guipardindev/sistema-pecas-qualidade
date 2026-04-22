@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block conteudo %}
+
+<section class="remover">
+	<h2>Remover Peça</h2>
+
+	{% if mensagem %} {% if "sucesso" in mensagem %}
+	<p class="mensagem-sucesso">{{ mensagem }}</p>
+	{% else %}
+	<p class="mensagem-erro">{{ mensagem }}</p>
+	{% endif %} {% endif %}
+
+	<form method="POST" action="/remover">
+		<label>ID da Peça</label>
+		<input type="number" name="id" required />
+
+		<button type="submit">Remover Peça</button>
+	</form>
+</section>
+
+{% endblock %}

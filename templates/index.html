@@ -1,0 +1,59 @@
+{% extends "base.html" %} {% block conteudo %}
+
+<section class="dashboard">
+	<h2>Dashboard</h2>
+
+	{% if total > 0 %}
+	<div class="cards">
+		<div class="card">
+			<p>Total Cadastradas</p>
+			<span class="card-numero card-azul">{{ total }}</span>
+		</div>
+		<div class="card">
+			<p>Aprovadas</p>
+			<span class="card-numero card-verde">{{ total_ap }} ({{ taxa_ap }}%)</span>
+		</div>
+		<div class="card">
+			<p>Reprovadas</p>
+			<span class="card-numero card-vermelho"
+				>{{ total_rep }} ({{ taxa_rep }}%)</span
+			>
+		</div>
+		<div class="card">
+			<p>Caixas Fechadas</p>
+			<span class="card-numero card-azul">{{ total_caixas }}</span>
+		</div>
+		<div class="card">
+			<p>Caixa Atual</p>
+			<span class="card-numero card-azul"
+				>#{{ caixa_numero }} — {{ caixa_pecas }}/10</span
+			>
+		</div>
+	</div>
+	{% else %}
+	<p class="text-muted">Nenhuma peça cadastrada ainda.</p>
+	{% endif %}
+</section>
+
+<section class="cadastro">
+	<h2>Cadastrar Nova Peça</h2>
+
+	{% if erro %}
+	<p class="mensagem-erro">{{ erro }}</p>
+	{% endif %}
+
+	<form method="POST" action="/">
+		<label>Peso (g)</label>
+		<input type="number" name="peso" step="0.1" required />
+
+		<label>Cor</label>
+		<input type="text" name="cor" required />
+
+		<label>Comprimento (cm)</label>
+		<input type="number" name="comprimento" step="0.1" required />
+
+		<button type="submit">Cadastrar Peça</button>
+	</form>
+</section>
+
+{% endblock %}
