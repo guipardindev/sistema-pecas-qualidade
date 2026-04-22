@@ -53,20 +53,22 @@ Se qualquer critério não for atendido → peça reprovada com motivo registrad
 
 ## 📂 Estrutura do Projeto
 
+```text
 sistema-pecas-qualidade/
-├── main.py # Lógica principal do sistema
-├── app.py # Rotas Flask
-├── requirements.txt # Dependências
-├── Procfile # Configuração para deploy
+├── main.py              # Lógica principal do sistema
+├── app.py               # Rotas Flask
+├── requirements.txt     # Dependências
+├── Procfile             # Configuração para deploy
 ├── templates/
-│ ├── base.html # Layout global
-│ ├── index.html # Dashboard + Cadastro
-│ ├── listar.html # Listagem de peças
-│ ├── caixas.html # Caixas fechadas e atual
-│ ├── remover.html # Remoção de peça
-│ └── relatorio.html # Relatório final
+│   ├── base.html        # Layout global
+│   ├── index.html       # Dashboard + Cadastro
+│   ├── listar.html      # Listagem de peças
+│   ├── caixas.html      # Caixas fechadas e atual
+│   ├── remover.html     # Remoção de peça
+│   └── relatorio.html   # Relatório final
 └── static/
-└── style.css # Estilo dark mode
+    └── style.css        # Estilo dark mode
+```
 
 ## 🖥 Funcionalidades
 
