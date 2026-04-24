@@ -105,10 +105,10 @@ Acesse em: http://127.0.0.1:5000
 
 ## 🎬 Vídeo Pitch
 
-🔗 Link do vídeo — em breve
-🔗 https://youtu.be/5ttSijkh9MQ
+🔗 Link do vídeo — https://youtu.be/5ttSijkh9MQ
 
 ## 📄 Documentação Teórica
+
 A análise e discussão teórica do projeto está disponível no arquivo abaixo:
 🔗 [Parte Teórica — Análise e Discussão](https://github.com/guipardindev/sistema-pecas-qualidade/blob/84967405ecd36e90d3c600c15595132eaf98dc6b/docs/Algoritmos_Analise_Discussao_Guilherme.pdf)
 
