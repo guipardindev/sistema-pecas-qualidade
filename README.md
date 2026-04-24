@@ -1,5 +1,7 @@
 # SiCPQ — Sistema de Controle de Produção e Qualidade Industrial
 
+[![Banner SiCPQ](https://img.youtube.com/vi/5ttSijkh9MQ/maxresdefault.jpg)](https://youtu.be/5ttSijkh9MQ)
+
 ## 📌 Descrição do Projeto
 
 Este projeto foi desenvolvido para a disciplina Algoritmos e Lógica de Programação — UNIFECAF.
@@ -104,6 +106,7 @@ Acesse em: http://127.0.0.1:5000
 ## 🎬 Vídeo Pitch
 
 🔗 Link do vídeo — em breve
+🔗 https://youtu.be/5ttSijkh9MQ
 
 ## 📄 Documentação Teórica
 A análise e discussão teórica do projeto está disponível no arquivo abaixo:
